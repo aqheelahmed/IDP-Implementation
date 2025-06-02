@@ -1,0 +1,32 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "f35ea64"
+  },
+  "schemaVersion": 18,
+  "id": "Form_invoice",
+  "components": [
+    {
+      "text": "Document Upload",
+      "type": "text",
+      "layout": {
+        "row": "Row_1hpdv5b",
+        "columns": null
+      },
+      "id": "Field_1vld3cv"
+    },
+    {
+      "label": "File picker",
+      "type": "filepicker",
+      "layout": {
+        "row": "Row_0fld232",
+        "columns": null
+      },
+      "id": "Field_0ovft4g",
+      "key": "document"
+    }
+  ],
+  "type": "default"
+}
