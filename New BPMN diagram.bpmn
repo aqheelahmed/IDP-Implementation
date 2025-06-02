@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="f35ea64" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
+  <bpmn:process id="Process_0xijt9b" name="New BPMN diagram" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_08ibrbn</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_1ldfulk" name="Login">
+      <bpmn:incoming>Flow_08ibrbn</bpmn:incoming>
+      <bpmn:outgoing>Flow_0z7f2tr</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_08ibrbn" sourceRef="StartEvent_1" targetRef="Activity_1ldfulk" />
+    <bpmn:endEvent id="Event_0fp4bey">
+      <bpmn:incoming>Flow_0z7f2tr</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0z7f2tr" sourceRef="Activity_1ldfulk" targetRef="Event_0fp4bey" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0xijt9b">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="242" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ldfulk_di" bpmnElement="Activity_1ldfulk">
+        <dc:Bounds x="330" y="230" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0fp4bey_di" bpmnElement="Event_0fp4bey">
+        <dc:Bounds x="482" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_08ibrbn_di" bpmnElement="Flow_08ibrbn">
+        <di:waypoint x="278" y="270" />
+        <di:waypoint x="330" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0z7f2tr_di" bpmnElement="Flow_0z7f2tr">
+        <di:waypoint x="430" y="270" />
+        <di:waypoint x="482" y="270" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
